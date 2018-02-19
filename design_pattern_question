@@ -1,0 +1,18 @@
+Q.What is factory design pattern.
+Ans:this design pattern used for creating object of same class
+Q.Single ton dp? for both dp they given to write the code creating one object within a class loader
+Q3.In Which scenario we can go for factory dp and Singleton dp.Where you would apply in your proj.
+Ans:
+first scenario of singleton class:
+A few days ago, I had to implement holding a list of loaded assemblies and its references during 
+program-execution. As this is a bigger project, we're talking about 150 dll-files to look at. In that case, I just didn't want to load the
+same data again and again whenever I need to get one of these assembliesTherefore, I used a singleton-class, which creates this certain 
+list on its first call and holds that values until the application gets closed
+second scenario of singleton class:
+Hi, We used the singleton pattern in our utility layers which consist of Loggging, Caching, Service host repositories, Load Balancer... 
+If the question ison how we arrived to the design. There was a performance lag on the utility layer eg, Logging, on diagnosing we observed 
+that there are several instance getting created which are not required in my case. So we adopted Singleton pattern. Hope this helpsthird 
+scenario of singleton class:You can use it in remoting when you want to create a shareable service....
+scenario of FACTORY classObject's class doesn't know what exact sub-classes it have to createObject's class is designed so that objects
+it creates were specified by sub-classesObject's class delegates its duties to auxiliary sub-classes and doesn't know what exact class 
+will take these duties
